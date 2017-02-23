@@ -45,14 +45,14 @@
     "lodash": "^3.10.1",
     "minimist": "^1.2.0",
     "mixin-object": "^2.0.1",
-    "modernizr-loader": "0.0.4",
+    "modernizr-loader": "1.0.1",
     "request": "^2.65.0",
     "socket.io": "^1.4.5",
     "socket.io-events": "^0.4.6",
     "socketio-jwt": "^4.3.3",
     "url-parse": "^1.0.5",
-    "webpack": "^1.12.3",
-    "webpack-dev-server": "1.10.1",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.1",
     "xmldom": "^0.1.19",
     "xpath": "0.0.9"
   }
