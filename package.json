@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/StephanGerbeth/agency-server#readme",
   "dependencies": {
+    "@danielbayerlein/hapi-webpack-middleware": "^1.0.1",
     "aguid": "^1.0.3",
     "dynamic.io": "0.0.3",
     "fb": "^1.0.2",
@@ -38,7 +39,7 @@
     "h2o2": "^4.0.2",
     "hapi": "^11.1.0",
     "hapi-auth-jwt2": "^5.2.0",
-    "hapi-webpack-connection": "^3.3.0",
+    "hapi-webpack-dev-middleware": "^2.0.0",
     "inert": "^3.2.0",
     "jsonwebtoken": "^5.4.1",
     "lazy-cache": "^0.2.4",
@@ -53,6 +54,8 @@
     "url-parse": "^1.0.5",
     "webpack": "2.2.1",
     "webpack-dev-server": "2.4.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1",
     "xmldom": "^0.1.19",
     "xpath": "0.0.9"
   }
