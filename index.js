@@ -1,9 +1,12 @@
 "use strict";
 
+var template = require('lodash/template');
+var upath = require('upath');
 var options = require('minimist')(process.argv.slice(2));
+var serverConfig = JSON.parse(template(JSON.stringify(require(upath.join(process.cwd(), options.serverConfig))))({'root': upath.join(process.cwd())}))[process.env.NODE_ENV];
 
 module.exports = function () {
-    if(process.env.NODE_ENV === 'development') {
+    if(serverConfig.dev) {
         require('gulp-nodemon')({
             script: require.resolve(options.server + '/lib/servers'),
             ignore: ['**/*'],
