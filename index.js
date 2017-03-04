@@ -6,7 +6,7 @@ module.exports = function () {
     if(options.env === 'development') {
         require('gulp-nodemon')({
             script: require.resolve(options.server + '/lib/servers'),
-            ignore: ['src/**/*'],
+            ignore: ['**/*'],
             args: ['--serverConfig=' + options.serverConfig, (options.ip) ? '--ip=' + options.ip : '']
         });
 
