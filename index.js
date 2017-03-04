@@ -3,7 +3,7 @@
 var options = require('minimist')(process.argv.slice(2));
 
 module.exports = function () {
-    if(options.env === 'development') {
+    if(process.env.NODE_ENV === 'development') {
         require('gulp-nodemon')({
             script: require.resolve(options.server + '/lib/servers'),
             ignore: ['**/*'],
