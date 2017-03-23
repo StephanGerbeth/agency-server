@@ -39,6 +39,7 @@
     "hapi": "^11.1.0",
     "hapi-auth-jwt2": "^5.2.0",
     "hapi-webpack-connection": "^3.3.0",
+    "hapi-heroku-helpers": "^2.0.0",
     "inert": "^3.2.0",
     "jsonwebtoken": "^5.4.1",
     "lazy-cache": "^0.2.4",
