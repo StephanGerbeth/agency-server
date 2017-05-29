@@ -1,12 +1,13 @@
 "use strict";
 
 var options = require('minimist')(process.argv.slice(2));
+var serverConfig = require(process.cwd() + options.serverConfig);
 
 module.exports = function () {
-    if(options.env === 'development') {
+    if(serverConfig.dev) {
         require('gulp-nodemon')({
             script: require.resolve(options.server + '/lib/servers'),
-            ignore: ['src/**/*'],
+            ignore: ['**/*'],
             args: ['--serverConfig=' + options.serverConfig, (options.ip) ? '--ip=' + options.ip : '']
         });
 
